@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+
+        }
+
+        .ticket {
+
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .code {
+            width: 700px;
+            height: 300px;
+            background: #101010;
+            display: flex;
+            border-radius: 35px;
+            overflow: hidden;
+            position: relative;
+
+        }
+
+        .left {
+            width: 300px;
+            border-right: 2px dashed white;
+            padding: 25px;
+
+        }
+
+        .right {
+            width: 400px;
+            padding: 25px;
+            margin-left: 30px;
+        }
+
+        .circle {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: white;
+
+        }
+
+        .state {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px
+        }
+
+        .line {
+            position: relative;
+        }
+
+        .plane {
+            position: absolute;
+            left: 50%;
+            top: -6px;
+        }
+
+        .qr {
+            margin-top: 10px;
+        }
+
+        .halfcircle {
+            width: 90px;
+            height: 50px;
+            border-radius: 0 0 100px 100px;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            left: 248px;
+            top: -18px;
+        }
+
+        .circle {
+            width: 90px;
+            height: 50px;
+            border-radius: 100px 100px 0 0;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            left: 248px;
+            bottom: -18px;
+        }
+
+        .img {
+
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .detail {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .trem {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .gray {
+            color: #b4b3b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ticket">
+        <div class="code">
+            <div class="left">
+                <div class="halfcircle"></div>
+                <div class="text">
+                    <h3>Check In</h3>
+                    <p class="gray">20-8-2022 - 21-8-2023</p>
+                    <br>
+                    <div class="line">
+                        <hr>
+                        <i class="fa-solid fa-plane plane"></i>
+                    </div>
+                    <div class="state">
+                        <h2>CUU</h2>
+                        <h5 class="gray">10h 48min</h5>
+                        <h2>DEL</h2>
+                    </div>
+                    <div class="qr">
+                        <!-- <i class="fa-solid fa-qrcode "></i> -->
+                        <img src="./transparent-qr-code-icon-online-shop-icon-icon-scan-icon-5fad49fdc81899.4679939416051921898196.png"
+                            width="100px" alt="">
+                    </div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class=" right">
+                <div class="detail">
+                    <div class="passeger">
+                        <h5 class="gray">Passenger</h5>
+                        <h3>Avishek Sharma</h3>
+                    </div>
+                    <img src="./sharmaji.jpg" alt="" class="img">
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="trem">
+                    <div class="boarding">
+                        <h5 class="gray">Terminal</h5>
+                        <h3>1</h3>
+                    </div>
+                    <div class="boarding">
+                        <h5 class="gray">Boarding</h5>
+                        <h3>8.41</h3>
+                    </div>
+                    <div class="boarding">
+                        <h5 class="gray">Gate</h5>
+                        <h3>51
+                            <h3>
+                    </div>
+                </div>
+                <br>
+                <div class="trem">
+                    <div class="boarding">
+                        <h5 class="gray">Class</h5>
+                        <h3>Business</h3>
+                    </div>
+                    <div class="boarding">
+                        <h5 class="gray">Seat</h5>
+                        <h3>2a</h3>
+                    </div>
+                    <div class="boarding">
+                        <h5 class="gray">Departure</h5>
+                        <h3>18:00</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
